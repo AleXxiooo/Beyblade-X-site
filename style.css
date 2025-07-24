@@ -5,12 +5,13 @@ body {
 }
 
 #prawa_strona{
-    position: right;
+    position: absolute;
     width:50%;
 }
 
 #lewa_strona{
-    position: right;
+    position: absolute;
+    align: left;
     width:50%;
 }
 
