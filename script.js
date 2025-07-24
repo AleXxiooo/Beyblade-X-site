@@ -74,6 +74,17 @@ function handleChange() {
     }
 }
 
+function handleChange2() {
+    const blade = bladeData[bladeSelect2.value];
+    const ratchet = ratchetData[ratchetSelect2.value];
+    const bit = bitData[bitSelect2.value];
+
+    if (blade && ratchet && bit) {
+        const combinedStats = sumStats(blade, ratchet, bit);
+        updateChart(combinedStats);
+    }
+}
+
 function init() {
     populateSelect(bladeSelect, bladeData, 'Blade');
     populateSelect(ratchetSelect, ratchetData, 'Ratchet');
