@@ -1,5 +1,5 @@
 body {
-    display: flex;
+  display: flex;
   height: 100vh;
   margin: 0;
   background-color: #121212;
@@ -11,55 +11,53 @@ body {
   flex: 1 1 50%;
   padding: 20px;
   box-sizing: border-box;
+
+  display: flex;           /* dodaj flex do kontenera */
+  flex-direction: column;  /* ułóż dzieci pionowo */
+  align-items: center;     /* wyśrodkuj poziomo */
+  overflow-y: auto;        /* scroll jeśli za dużo */
 }
 
-.selectors {
-    display:flex;
-    background-color: #1E1E1E;
-    gap: 10px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-
-}
-
-.selectors2 {
-    display:flex;
-    background-color: #1E1E1E;
-    gap: 10px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-
+.selectors, .selectors2 {
+  display: flex;
+  gap: 10px;
+  background-color: #1E1E1E;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  width: 100%;
+  justify-content: center; /* centrowanie selectów */
 }
 
 select {
-    background-color: #1E1E1E;
-    color: #E0E0E0;
-    border: 1px solid #333;
-    padding: 10px;
-    border-radius: 6px;
-    width: 100%;
+  background-color: #1E1E1E;
+  color: #E0E0E0;
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 6px;
+  width: 150px;  /* ustalona szerokość, zamiast 100% */
 }
 
-    select:focus {
-        outline: none;
-        border-color: #2196F3;
-        box-shadow: 0 0 5px #2196F3;
-    }
+select:focus {
+  outline: none;
+  border-color: #2196F3;
+  box-shadow: 0 0 5px #2196F3;
+}
 
 h1 {
-    color: #2196F3;
-    text-align: center;
+  color: #2196F3;
+  text-align: center;
+  margin-bottom: 20px;
+  user-select: none;
 }
 
 canvas {
-    background-color: #1E1E1E;
-    border-radius: 12px;
-    padding: 10px;
-    margin: 20px auto;
-    display: block;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    max-width: 100%;
+  background-color: #1E1E1E;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  max-width: 100%;
   height: auto;
+  display: block;
 }
