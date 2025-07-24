@@ -42,7 +42,8 @@ function updateChart(stats) {
     };
 
     const options = {
-        responsive: true,
+        responsive: false,
+  maintainAspectRatio: false,
         scales: {
             r: {
                 beginAtZero: true,
@@ -82,7 +83,8 @@ function updateChart2(stats) {
     };
 
     const options = {
-        responsive: true,
+        responsive: false,
+  maintainAspectRatio: false,
         scales: {
             r: {
                 beginAtZero: true,
