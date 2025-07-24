@@ -12,8 +12,10 @@ body {
 
 #lewa_strona{
     position: absolute;
-    float: left;
-    width:50%;
+  left: 0;
+  top: 0;
+  width: 50vw; /* połowa szerokości ekranu */
+  height: 100vh;
 }
 
 .selectors {
