@@ -7,7 +7,9 @@ body{
 }
 
 #naglowek{
-  
+   background-color: #121212;
+    color: #E0E0E0;
+    box-shadow:rgba(33, 150, 243, 0.5);
 }
 
 h1{
