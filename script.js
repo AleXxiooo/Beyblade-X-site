@@ -63,6 +63,46 @@ function updateChart(stats) {
     }
 }
 
+function updateChart2(stats) {
+    const data = {
+        labels: ['Attack', 'Defense', 'Stamina', 'Speed', 'Burst'],
+        datasets: [{
+            label: 'Statystyki Combo',
+            data: [stats.attack, stats.defense, stats.stamina, stats.speed, stats.burst],
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgb(54, 162, 235)',
+            borderWidth: 2,
+            pointBackgroundColor: 'rgb(54, 162, 235)'
+        }]
+    };
+
+    const options = {
+        responsive: true,
+        scales: {
+            r: {
+                beginAtZero: true,
+                max: 20,
+                angleLines: { color: '#777' },
+                grid: { color: '#555' },
+                pointLabels: { color: '#fff', font: { size: 14 } },
+                ticks: { color: '#aaa', backdropColor: 'transparent' }
+            }
+        },
+        plugins: {
+            legend: { labels: { color: '#fff' } }
+        }
+    };
+
+    if (radarChart2) {
+        radarChart2.data = data;
+        radarChart2.options = options;
+        radarChart2.update();
+    } else {
+        const ctx = document.getElementById('radarChart2').getContext('2d');
+        radarChart2 = new Chart(ctx, { type: 'radar', data, options });
+    }
+}
+
 function handleChange() {
     const blade = bladeData[bladeSelect.value];
     const ratchet = ratchetData[ratchetSelect.value];
