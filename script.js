@@ -1,5 +1,3 @@
-       
-
 function populateSelect(selectClassName, data, keyName) {
   const selects = document.querySelectorAll(`.${selectClassName}`);
   selects.forEach(select => {
