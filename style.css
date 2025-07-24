@@ -12,9 +12,13 @@ h1{
 }
 
 #lewa_strona{
-  
+  position: relative;
+  width: 300px;
+  height: 30px;
 }
 
 #prawa_strona{
-  
+  position: relative;
+  width: 300px;
+  height: 30px;
 }
