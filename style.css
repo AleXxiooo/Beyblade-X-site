@@ -53,11 +53,6 @@ label {
   transition: border 0.3s ease;
 }
 
-label:hover {
-  border: 1px solid #2196F3;
-  background-color: #222;
-}
-
 select {
   width: 100%;
   padding: 12px 15px;
