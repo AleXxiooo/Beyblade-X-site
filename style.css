@@ -12,18 +12,15 @@ h1{
 }
 
 #glowny{
-  position:absolute;
+  display:flex;
   width:100%;
+  height: 100vh;
 }
 
-#lewa_strona{
+#lewa_strona, #prawa_strona{
   position: relative;
   width: 50%;
-  height: 50px;
+  padding:20px;
+  background-color:#1E1E1E;
 }
 
-#prawa_strona{
-  position: relative;
-  width: 50%;
-  height: 50px;
-}
