@@ -86,10 +86,22 @@ select:hover {
 
 #wyniki{
   display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px 20px;
+  background-color: #121212;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .bey-section{
-  
+  background-color: #1A1A1A;
+  border-radius: 12px;
+  padding: 20px;
+  color: #eee;
+  width: 350px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  text-align: center;
 }
 
 .bey-section img{
