@@ -51,3 +51,11 @@ select{
   gap: 20px;
   flex-wrap: wrap; /* jeśli chcesz, by zwinęło się przy mniejszych ekranach */
 }
+
+label {
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #aaa;
+}
