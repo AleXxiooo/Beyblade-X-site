@@ -143,6 +143,19 @@ function init() {
     ratchetSelect.selectedIndex = 0;
     bitSelect.selectedIndex = 0;
     handleChange();
+
+    populateSelect(bladeSelect2, bladeData, 'Blade');
+    populateSelect(ratchetSelect2, ratchetData, 'Ratchet');
+    populateSelect(bitSelect2, bitData, 'Bit');
+
+    bladeSelect2.addEventListener('change', handleChange2);
+    ratchetSelect2.addEventListener('change', handleChange2);
+    bitSelect2.addEventListener('change', handleChange2);
+
+    bladeSelect2.selectedIndex = 0;
+    ratchetSelect2.selectedIndex = 0;
+    bitSelect2.selectedIndex = 0;
+    handleChange2();
 }
 
 init();
