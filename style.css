@@ -88,10 +88,15 @@ select:hover {
   display: flex;
 }
 
-.bey-section p{
+.bey-section{
   
 }
 
 .bey-section img{
-  
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.bey-section p{
+  margin: 4px 0;
 }
