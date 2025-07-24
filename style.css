@@ -4,6 +4,16 @@ body {
     font-family: 'Segoe UI', sans-serif;
 }
 
+#prawa_strona{
+    position: right;
+    width:50%;
+}
+
+#lewa_strona{
+    position: right;
+    width:50%;
+}
+
 .selectors {
     display:flex;
     background-color: #1E1E1E;
