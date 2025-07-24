@@ -9,16 +9,16 @@ body {
 }
 
 h1 {
-  color: #2196F3;
+  flex: 0 0 auto; /* nagłówek nie rośnie i nie kurczy się */
+  width: 100%;
   text-align: center;
   margin: 20px 0;
-  user-select: none;
 }
-
 /* Kontener na dwie strony obok siebie */
 #main {
-  flex: 1; /* zajmuje resztę wysokości */
+  flex: 1 1 auto; /* zajmuje resztę wysokości */
   display: flex;
+  width: 100%;
   gap: 10px;
   padding: 0 20px 20px 20px;
   box-sizing: border-box;
