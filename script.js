@@ -1,7 +1,12 @@
 ﻿const bladeSelect = document.getElementById('bladeSelect');
 const ratchetSelect = document.getElementById('ratchetSelect');
 const bitSelect = document.getElementById('bitSelect');
+
+﻿const bladeSelect2 = document.getElementById('bladeSelect2');
+const ratchetSelect2 = document.getElementById('ratchetSelect2');
+const bitSelect2 = document.getElementById('bitSelect2');
 let radarChart;
+let radarChart2;
 
 function populateSelect(select, items, key) {
     select.innerHTML = ''; // Czyścimy listę
@@ -121,7 +126,7 @@ function handleChange2() {
 
     if (blade && ratchet && bit) {
         const combinedStats = sumStats(blade, ratchet, bit);
-        updateChart(combinedStats);
+        updateChart2(combinedStats);
     }
 }
 
