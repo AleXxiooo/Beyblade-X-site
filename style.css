@@ -48,6 +48,11 @@ label {
   font-size: 14px;
   color: #CCCCCC;
   padding: 10px;
+  transition: all 0.3s ease;
+}
+
+label:hover{
+  color:#2196F3;
 }
 
 select {
