@@ -1,27 +1,16 @@
 body {
-    background-color: #121212;
-    color: #E0E0E0;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-#prawa_strona{
-    position: absolute;
-  right: 0;
-  top: 0;
-  width: 50vw; /* połowa szerokości ekranu */
+    display: flex;
   height: 100vh;
-}
-
-#lewa_strona{
-    position: absolute;
-  left: 0;
-  top: 0;
-  width: 50vw; /* połowa szerokości ekranu */
-  height: 100vh;
+  margin: 0;
+  background-color: #121212;
+  color: #E0E0E0;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 #lewa_strona, #prawa_strona {
-  overflow: auto;
+  flex: 1 1 50%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .selectors {
