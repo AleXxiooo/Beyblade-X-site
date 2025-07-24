@@ -14,6 +14,16 @@ body {
 
 }
 
+.selectors2 {
+    display:flex;
+    background-color: #1E1E1E;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+
 select {
     background-color: #1E1E1E;
     color: #E0E0E0;
