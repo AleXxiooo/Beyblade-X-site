@@ -47,7 +47,6 @@ label {
   width: 170px;
   font-size: 14px;
   color: #CCCCCC;
-  border: 1px solid transparent;
   padding: 10px;
   border-radius: 8px;
   transition: border 0.3s ease;
