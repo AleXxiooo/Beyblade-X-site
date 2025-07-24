@@ -31,7 +31,7 @@ h1{
   background-color:#1E1E1E;
 
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center; /* Wyśrodkuj elementy w poziomie */
   justify-content: center; /* Wyśrodkuj elementy w pionie */
 }
