@@ -83,3 +83,15 @@ select:hover {
     justify-content: center;
   }
 }
+
+#wyniki{
+  display: flex;
+}
+
+.bey-section p{
+  
+}
+
+.bey-section img{
+  
+}
