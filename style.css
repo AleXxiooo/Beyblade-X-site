@@ -36,6 +36,7 @@ select{
   width:150px;
   padding:20px;
   box-sizing:border-box;
-  margin:0 auto;
+  margin:10 auto;
+  border-radius:6px;
 }
 
