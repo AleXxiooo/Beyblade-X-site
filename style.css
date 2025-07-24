@@ -64,9 +64,10 @@ canvas {
   background-color: #1E1E1E;
   border-radius: 12px;
   padding: 10px;
-  margin: 20px 0;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  width: 100%;
-  height: auto;
+  width: 300px !important;
+  height: 300px !important;
+  max-width: none;
   display: block;
+  margin: 20px auto;
 }
