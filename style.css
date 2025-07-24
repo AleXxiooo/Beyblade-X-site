@@ -6,6 +6,10 @@ body{
   padding: 0;
 }
 
+#naglowek{
+  
+}
+
 h1{
   text-align: center;
   margin-top: 20px;
@@ -23,5 +27,9 @@ h1{
   padding:20px;
   box-sizing:border-box;
   background-color:#1E1E1E;
+}
+
+select{
+  
 }
 
