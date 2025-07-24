@@ -1,5 +1,6 @@
 body {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   margin: 0;
   background-color: #121212;
@@ -7,15 +8,30 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
+h1 {
+  color: #2196F3;
+  text-align: center;
+  margin: 20px 0;
+  user-select: none;
+}
+
+/* Kontener na dwie strony obok siebie */
+#main {
+  flex: 1; /* zajmuje resztę wysokości */
+  display: flex;
+  gap: 10px;
+  padding: 0 20px 20px 20px;
+  box-sizing: border-box;
+  overflow: hidden; /* żeby nic nie wychodziło poza ekran */
+}
+
 #lewa_strona, #prawa_strona {
   flex: 1 1 50%;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
   box-sizing: border-box;
-
-  display: flex;           /* dodaj flex do kontenera */
-  flex-direction: column;  /* ułóż dzieci pionowo */
-  align-items: center;     /* wyśrodkuj poziomo */
-  overflow-y: auto;        /* scroll jeśli za dużo */
+  overflow-y: auto; /* scroll jeśli za dużo treści */
 }
 
 .selectors, .selectors2 {
@@ -26,7 +42,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   width: 100%;
-  justify-content: center; /* centrowanie selectów */
+  justify-content: center;
 }
 
 select {
@@ -35,20 +51,13 @@ select {
   border: 1px solid #333;
   padding: 10px;
   border-radius: 6px;
-  width: 150px;  /* ustalona szerokość, zamiast 100% */
+  width: 150px;
 }
 
 select:focus {
   outline: none;
   border-color: #2196F3;
   box-shadow: 0 0 5px #2196F3;
-}
-
-h1 {
-  color: #2196F3;
-  text-align: center;
-  margin-bottom: 20px;
-  user-select: none;
 }
 
 canvas {
