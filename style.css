@@ -29,7 +29,11 @@ h1{
   padding:20px;
   box-sizing:border-box;
   background-color:#1E1E1E;
-  justify-content: center;
+
+  display:flex;
+  flex-direction: column;
+  align-items: center; /* Wyśrodkuj elementy w poziomie */
+  justify-content: center; /* Wyśrodkuj elementy w pionie */
 }
 
 select{
