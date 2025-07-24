@@ -1,4 +1,4 @@
-[
+const bladeData = [
  {
    "name": "Black Shell",
    "type": "Blade",
@@ -458,8 +458,9 @@
    "stamina": 0,
    "weight": 0,
    "speed": 0
- },
- {
+ }];
+
+ const ratchetData = [{
    "name": "0-70",
    "type": "Ratchet",
    "image": "img/ratchets/0-70.png",
@@ -728,8 +729,9 @@
    "stamina": 0,
    "weight": 0,
    "speed": 0
- },
- {
+ }];
+  
+const bitData = [{
    "name": "Accel (A)",
    "type": "Bit",
    "image": "img/bits/Accel (A).png",
