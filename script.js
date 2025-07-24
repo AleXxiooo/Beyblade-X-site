@@ -130,9 +130,11 @@ function populateSelect(selectClassName, data, keyName) {
   });
 }
 
-populateSelect("selectBlade", bladeData, "Blade");
-populateSelect("selectRatchet", ratchetData, "Ratchet");
-populateSelect("selectBit", bitData, "Bit");
+document.addEventListener("DOMContentLoaded", () => {
+  populateSelect("selectBlade", bladeData, "Blade");
+  populateSelect("selectRatchet", ratchetData, "Ratchet");
+  populateSelect("selectBit", bitData, "Bit");
+});
 
 Document.querySelector('.selectBlade').addEventListener('change', (e) => {
   const selected = e.target.value;
