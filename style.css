@@ -6,8 +6,10 @@ body {
 
 #prawa_strona{
     position: absolute;
-    float: right;
-    width:50%;
+  right: 0;
+  top: 0;
+  width: 50vw; /* połowa szerokości ekranu */
+  height: 100vh;
 }
 
 #lewa_strona{
