@@ -18,7 +18,6 @@ h1{
 }
 
 #lewa_strona, #prawa_strona{
-  position: relative;
   width: 50%;
   padding:20px;
   box-sizing:border-box;
