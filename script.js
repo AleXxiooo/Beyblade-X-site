@@ -1,5 +1,5 @@
 function populateSelect(selectClassName, data, keyName) {
-  const selects = document.querySelectorAll(`.${selectClassName}`);
+  const selects = document.querySelectorAll(`#${selectClassName}`);
   selects.forEach(select => {
     // Czyść stare opcje (opcjonalne)
     select.innerHTML = '';
