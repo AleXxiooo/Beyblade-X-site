@@ -32,6 +32,8 @@ h1{
 }
 
 select{
-  
+  width:40%;
+  padding:20px;
+  box-sizing:border-box;
 }
 
