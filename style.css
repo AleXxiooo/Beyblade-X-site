@@ -55,3 +55,13 @@ select {
   color: #E0E0E0;
   border: 1px solid #444;
 }
+
+@media (max-width: 768px) {
+  #glowny {
+    flex-direction: column;
+  }
+
+  #lewa_strona, #prawa_strona {
+    width: 100%;
+  }
+}
