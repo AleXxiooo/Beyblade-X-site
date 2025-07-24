@@ -119,3 +119,14 @@
             {"Bit": "Zap (Z)"}
         ];
     </script>
+
+
+
+| Nazwa                  | Kolor (hex)               | Użycie                                        |
+| ---------------------- | ------------------------- | --------------------------------------------- |
+| **Tło**                | `#121212`                 | ciemne, główne tło strony                     |
+| **Tekst**              | `#E0E0E0`                 | jasny tekst na ciemnym tle                    |
+| **Akcent**             | `#2196F3`                 | niebieski, do podświetleń, linków, przycisków |
+| **Ciemniejszy akcent** | `#0D47A1`                 | ciemny niebieski do hoverów                   |
+| **Cień / Obrys**       | `rgba(33, 150, 243, 0.5)` | subtelny cień pod elementami                  |
+| **Tło panelu**         | `#1E1E1E`                 | tło dropdownów, kontenerów                    |
