@@ -117,3 +117,28 @@
             {"Bit": "Wedge (W)"},
             {"Bit": "Zap (Z)"}
         ];
+
+function populateSelect(selectClassName, data, keyName) {
+  const selects = document.querySelectorAll(`.${selectClassName}`);
+  selects.forEach(select => {
+    data.forEach(item => {
+      const option = document.createElement("option");
+      option.textContent = item[keyName];
+      option.value = item[keyName];
+      select.appendChild(option);
+    });
+  });
+}
+
+populateSelect("selectBlade", bladeData, "Blade");
+populateSelect("selectRatchet", ratchetData, "Ratchet");
+populateSelect("selectBit", bitData, "Bit");
+
+ocument.querySelector('.selectBlade').addEventListener('change', (e) => {
+  const selected = e.target.value;
+  const blade = bladeData.find(b => b.Blade === selected);
+  if (blade) {
+    // Tutaj wyświetl statystyki np.:
+    console.log(`Atak: ${blade.attack}, Obrona: ${blade.defense}, itd.`);
+  }
+});
