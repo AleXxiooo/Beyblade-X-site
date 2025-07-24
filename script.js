@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
   populateSelect("selectBit", bitData, "Bit");
 });
 
-Document.querySelector('.selectBlade').addEventListener('change', (e) => {
+document.querySelector('.selectBlade').addEventListener('change', (e) => {
   const selected = e.target.value;
   const blade = bladeData.find(b => b.Blade === selected);
   if (blade) {
