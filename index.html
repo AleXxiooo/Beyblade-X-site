@@ -7,10 +7,11 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <h1>Beyblade X Combo Builder</h1>
+     <h1>Beyblade X Combo Builder</h1>
 
+  <div id="main">
     <div id="lewa_strona">
-    <div class="selectors">
+      <div class="selectors">
         <label for="bladeSelect">Blade:</label>
         <select id="bladeSelect"></select>
 
@@ -19,13 +20,13 @@
 
         <label for="bitSelect">Bit:</label>
         <select id="bitSelect"></select>
-    </div>
-    
-    <canvas id="radarChart" width="400" height="400"></canvas>
+      </div>
+
+      <canvas id="radarChart" width="400" height="400"></canvas>
     </div>
 
     <div id="prawa_strona">
-    <div class="selectors2">
+      <div class="selectors2">
         <label for="bladeSelect2">Blade:</label>
         <select id="bladeSelect2"></select>
 
@@ -34,10 +35,11 @@
 
         <label for="bitSelect2">Bit:</label>
         <select id="bitSelect2"></select>
-    </div>
+      </div>
 
-    <canvas id="radarChart2" width="400" height="400"></canvas>
+      <canvas id="radarChart2" width="400" height="400"></canvas>
     </div>
+  </div>
     
     <!-- 🔽 Wklejone dane zamiast osobnych plików -->
     <script>
