@@ -6,12 +6,13 @@ body {
 
 #prawa_strona{
     position: absolute;
+    float: right;
     width:50%;
 }
 
 #lewa_strona{
     position: absolute;
-    align: left;
+    float: left;
     width:50%;
 }
 
