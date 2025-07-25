@@ -134,8 +134,9 @@ select:hover {
 #charts {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  padding: 40px 20px;
+  gap: 60px; /* większy odstęp między wykresami */
+  margin-top: 20px; /* zmniejsz odległość od wyników */
+  margin-bottom: 40px; /* dodaj trochę przestrzeni na dole */
   background-color: #121212;
   flex-wrap: wrap;
 }
@@ -148,10 +149,16 @@ select:hover {
   border-radius: 12px;
   padding: 10px;
   box-sizing: border-box;
+  margin-top: 0;
 }
 
 canvas {
   max-width: 350px;
   width: 100%;
   height: auto;
+}
+
+#wyniki,
+#charts {
+  align-items: flex-start;
 }
