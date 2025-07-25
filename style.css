@@ -148,3 +148,9 @@ select:hover {
   border-radius: 12px;
   padding: 20px;
 }
+
+canvas {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
