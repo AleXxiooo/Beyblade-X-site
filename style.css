@@ -130,3 +130,11 @@ select:hover {
 #rightResult > div {
   margin-bottom: 20px; /* albo więcej/ mniej – jak chcesz */
 }
+
+#charts {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  background-color: #0F0F0F;
+}
