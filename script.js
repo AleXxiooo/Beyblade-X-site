@@ -76,7 +76,7 @@ function renderSingleChart(canvasId, stats, labelColor, title) {
   };
 
   const config = {
-    type: "bar",
+    type: "radar",
     data,
     options: {
       responsive: true,
