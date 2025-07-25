@@ -136,7 +136,7 @@ select:hover {
   justify-content: center;
   gap: 40px;
   padding: 40px 20px;
-  background-color: #0F0F0F;
+  background-color: #121212;
   flex-wrap: wrap;
 }
 
@@ -144,7 +144,7 @@ select:hover {
   max-width: 100%;
   width: 350px;
   height: 300px;
-  background-color: #1A1A1A;
+  background-color: #121212;
   border-radius: 12px;
   padding: 20px;
 }
