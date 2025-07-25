@@ -21,19 +21,11 @@ function populateSelect(selectClassName, data, keyName) {
 
 function displayStats(containerId, part) {
   const container = document.getElementById(containerId);
+  const section = container.closest(".bey-section");
+
   if (!part) {
     container.innerHTML = '';
-    
-    // Ukryj .bey-section jeśli WSZYSTKIE 3 kontenery są puste
-    const isLeft = containerId.includes("Left");
-    const baseId = isLeft ? "leftResult" : "rightResult";
-    const parent = document.getElementById(baseId);
-    const allEmpty = [...parent.children].every(child => child.innerHTML.trim() === "");
-
-    if (allEmpty) {
-      parent.style.display = "none";
-    }
-
+    if (section) section.classList.remove("visible");
     return;
   }
 
@@ -49,10 +41,7 @@ function displayStats(containerId, part) {
     </ul>
   `;
 
-  // Pokaż sekcję jeśli coś zostało wybrane
-  const isLeft = containerId.includes("Left");
-  const baseId = isLeft ? "leftResult" : "rightResult";
-  document.getElementById(baseId).style.display = "block";
+  if (section) section.classList.add("visible");
 }
 
 function getSelectedPart(data, value) {
