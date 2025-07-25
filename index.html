@@ -14,7 +14,7 @@
     </div>
 
     <div id="menu">
-        
+        <!-- Jeśli będzie potrzeba -->
     </div>
     
     <div id="glowny">
@@ -23,29 +23,35 @@
           <label>Blade <select class="selectBlade"></select></label>
           <label>Ratchet <select class="selectRatchet"></select></label>
           <label>Bit <select class="selectBit"></select></label>
-            
-            <div id="bladeStatsLeft" class="stats"></div>
         </div>
 
         <div id="prawa_strona">
           <label>Blade <select class="selectBlade2"></select></label>
           <label>Ratchet <select class="selectRatchet2"></select></label>
           <label>Bit <select class="selectBit2"></select></label>
-
-            <div id="bladeStatsRight" class="stats"></div>
         </div>
         
     </div>
 
+    <!-- Sekcja wyświetlania wybranych danych -->
     <div id="wyniki">
-        <div class="bey-section" id="leftResult"></div>
-        <div class="bey-section" id="rightResult"></div>
+        <div class="bey-section" id="leftResult">
+            <div id="bladeStatsLeft" class="stats"></div>
+            <div id="ratchetStatsLeft" class="stats"></div>
+            <div id="bitStatsLeft" class="stats"></div>
+        </div>
+
+        <div class="bey-section" id="rightResult">
+            <div id="bladeStatsRight" class="stats"></div>
+            <div id="ratchetStatsRight" class="stats"></div>
+            <div id="bitStatsRight" class="stats"></div>
+        </div>
     </div>
         
     <div id="stopka">
-
+        <!-- Stopka, jeśli coś dodasz -->
     </div>
-    
+
     <script src="bey_czesci.js"></script>
     <script src="script.js"></script>
     
