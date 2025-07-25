@@ -96,7 +96,7 @@ select:hover {
 
 .bey-section {
   display: none; /* domyślnie ukryte */
-  background-color: #1F1F1F; /* jednolite tło */
+  background-color: #181818; /* jednolite tło */
   border-radius: 12px;
   padding: 24px;
   color: #eee;
