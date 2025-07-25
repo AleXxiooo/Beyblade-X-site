@@ -132,31 +132,11 @@ select:hover {
   margin-bottom: 20px; /* albo więcej/ mniej – jak chcesz */
 }
 
-#charts {
-  display: flex;
-  justify-content: center;
-  gap: 60px; /* większy odstęp między wykresami */
-  margin-top: 20px; /* zmniejsz odległość od wyników */
-  margin-bottom: 40px; /* dodaj trochę przestrzeni na dole */
-  background-color: #121212;
-  flex-wrap: wrap;
-}
-
-#charts canvas {
-  object-fit: contain;
-  width: 400px;
-  height: 400px;
-  background-color: #121212;
-  border-radius: 12px;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-top: 0;
-}
-
 canvas {
-  max-width: 450px;
+  max-width: 100%;
   width: 100%;
   height: auto;
+  margin-top: 20px;
 }
 
 #wyniki,
