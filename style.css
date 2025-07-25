@@ -26,7 +26,7 @@ h1 {
   justify-content: space-between;
   width: 100%;
   padding: 40px 0;
-  background-color: #1C1C1C;
+  background-color: #1A1A1A;
 }
 
 #lewa_strona,
@@ -37,7 +37,7 @@ h1 {
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
-  background-color: #1C1C1C;
+  background-color: #1A1A1A;
 }
 
 label {
