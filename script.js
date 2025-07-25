@@ -1,4 +1,4 @@
-function populateSelect(selectClassName, data, keyName) {
+function populateSelect(selectClassName, data, labelName) {
   const selects = document.querySelectorAll(`.${selectClassName}`);
   selects.forEach(select => {
     // Wyczyść stare opcje
@@ -6,21 +6,21 @@ function populateSelect(selectClassName, data, keyName) {
 
     // Dodaj pustą opcję
     const emptyOption = document.createElement("option");
-    emptyOption.textContent = `-- Wybierz ${keyName} --`;
+    emptyOption.textContent = `-- Wybierz ${labelName} --`;
     emptyOption.value = "";
     select.appendChild(emptyOption);
 
     // Dodaj dane
     data.forEach(item => {
       const option = document.createElement("option");
-      option.textContent = item[keyName];
-      option.value = item[keyName];
+      option.textContent = item.name; // <- Używamy .name zamiast item[keyName]
+      option.value = item.name;
       select.appendChild(option);
     });
   });
 }
 
-// Po załadowaniu DOM (i danych z <script> w HTML)
+// Po załadowaniu DOM
 document.addEventListener("DOMContentLoaded", () => {
   populateSelect("selectBlade", bladeData, "Blade");
   populateSelect("selectRatchet", ratchetData, "Ratchet");
