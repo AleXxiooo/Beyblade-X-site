@@ -110,7 +110,7 @@ select:hover {
 }
 
 .bey-section p{
-  margin: 20px 0;
+  margin: 4px 0;
 }
 
 .stats {
@@ -124,4 +124,8 @@ select:hover {
 .stats img {
   display: block;
   margin: 10px auto;
+}
+
+.part-result {
+  margin-bottom: 20px; /* zwiększ wartość według uznania */
 }
