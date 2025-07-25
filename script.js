@@ -86,19 +86,24 @@ function renderSingleChart(canvasId, stats, labelColor, title) {
   options: {
     responsive: true,
     plugins: {
-      legend: { display: false }
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: '#333', // ciemne tło dymków
+        titleColor: '#fff',
+        bodyColor: '#fff',
+      }
     },
     scales: {
       r: {
-        angleLines: { color: "#444" },
-        grid: { color: "#444" },
+        angleLines: { color: "#555" },
+        grid: { color: "#333" },
         pointLabels: {
-          color: "#ccc",
-          backdropColor: 'transparent', // <- dodaj to
+          color: "#ccc", // kolor nazw punktów (Attack, etc.)
+          font: { size: 12 },
         },
         ticks: {
-          backdropColor: 'transparent', // <- i to
-          color: "#aaa"
+          backdropColor: 'transparent', // ← USUWA jasne tło
+          color: '#aaa'
         }
       }
     }
