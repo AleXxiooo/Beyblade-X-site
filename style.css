@@ -95,6 +95,7 @@ select:hover {
 }
 
 .bey-section{
+  display: none;
   background-color: #1A1A1A;
   border-radius: 12px;
   padding: 20px;
