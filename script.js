@@ -30,7 +30,7 @@ function displayStats(containerId, part) {
       <li>Attack: ${part.attack}</li>
       <li>Defense: ${part.defense}</li>
       <li>Stamina: ${part.stamina}</li>
-      <li>Weight: ${part.weight}</li>
+      <li>Weight: ${part.weight} g</li>
       <li>Speed: ${part.speed}</li>
     </ul>
   `;
