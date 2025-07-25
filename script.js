@@ -74,5 +74,3 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-const partDiv = document.createElement("div");
-partDiv.classList.add("part-result"); // ← DODAJ TO
