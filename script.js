@@ -23,6 +23,17 @@ function displayStats(containerId, part) {
   const container = document.getElementById(containerId);
   if (!part) {
     container.innerHTML = '';
+    
+    // Ukryj .bey-section jeśli WSZYSTKIE 3 kontenery są puste
+    const isLeft = containerId.includes("Left");
+    const baseId = isLeft ? "leftResult" : "rightResult";
+    const parent = document.getElementById(baseId);
+    const allEmpty = [...parent.children].every(child => child.innerHTML.trim() === "");
+
+    if (allEmpty) {
+      parent.style.display = "none";
+    }
+
     return;
   }
 
@@ -37,6 +48,11 @@ function displayStats(containerId, part) {
       <li>Speed: ${part.speed}</li>
     </ul>
   `;
+
+  // Pokaż sekcję jeśli coś zostało wybrane
+  const isLeft = containerId.includes("Left");
+  const baseId = isLeft ? "leftResult" : "rightResult";
+  document.getElementById(baseId).style.display = "block";
 }
 
 function getSelectedPart(data, value) {
