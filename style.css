@@ -112,3 +112,16 @@ select:hover {
 .bey-section p{
   margin: 4px 0;
 }
+
+.stats {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+.stats img {
+  display: block;
+  margin: 10px auto;
+}
