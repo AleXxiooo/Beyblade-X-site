@@ -126,3 +126,7 @@ select:hover {
   margin: 10px auto;
 }
 
+#leftResult > div,
+#rightResult > div {
+  margin-bottom: 20px; /* albo więcej/ mniej – jak chcesz */
+}
