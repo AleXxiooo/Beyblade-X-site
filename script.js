@@ -37,13 +37,13 @@ function displayStats(containerId, part) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  populateSelect("selectBlade", bladeData, "Blade");
-  populateSelect("selectRatchet", ratchetData, "Ratchet");
-  populateSelect("selectBit", bitData, "Bit");
+  populateSelect("selectBlade", bladeData, "name");
+  populateSelect("selectRatchet", ratchetData, "name");
+  populateSelect("selectBit", bitData, "name");
 
-  populateSelect("selectBlade2", bladeData, "Blade");
-  populateSelect("selectRatchet2", ratchetData, "Ratchet");
-  populateSelect("selectBit2", bitData, "Bit");
+  populateSelect("selectBlade2", bladeData, "name");
+  populateSelect("selectRatchet2", ratchetData, "name");
+  populateSelect("selectBit2", bitData, "name");
 
   // Lewa strona
   document.querySelector(".selectBlade").addEventListener("change", (e) => {
