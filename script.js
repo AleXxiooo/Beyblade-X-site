@@ -80,11 +80,12 @@ function renderSingleChart(canvasId, stats, labelColor, title) {
     data,
     options: {
       responsive: true,
+      maintainAspectRatio: false,
       plugins: {
         legend: { display: false }
       },
       scales: {
-        y: { beginAtZero: true }
+        r: { beginAtZero: true }
       }
     }
   };
