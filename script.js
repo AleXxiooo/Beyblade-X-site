@@ -92,19 +92,29 @@ function renderSingleChart(canvasId, stats, labelColor, title) {
   };
 
   const config = {
-    type: "radar",
-    data,
-    options: {
-      responsive: true,
-      maintainAspectRatio: true,
-      plugins: {
-        legend: { display: false }
-      },
-      scales: {
-        r: { beginAtZero: true }
+  type: "radar",
+  data,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { display: false }
+    },
+    scales: {
+      r: {
+        angleLines: { color: "#444" },
+        grid: { color: "#444" },
+        pointLabels: {
+          color: "#ccc",
+          backdropColor: 'transparent', // <- dodaj to
+        },
+        ticks: {
+          backdropColor: 'transparent', // <- i to
+          color: "#aaa"
+        }
       }
     }
-  };
+  }
+};
 
   if (canvasId === "leftStatsChart" && leftChart) leftChart.destroy();
   if (canvasId === "rightStatsChart" && rightChart) rightChart.destroy();
