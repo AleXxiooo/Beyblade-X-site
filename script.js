@@ -6,7 +6,7 @@ function populateSelect(selectClassName, data, keyName) {
   selects.forEach(select => {
     select.innerHTML = '';
     const emptyOption = document.createElement("option");
-    emptyOption.textContent = `-- Wybierz ${keyName} --`;
+    emptyOption.textContent = `-- Wybierz --`;
     emptyOption.value = "";
     select.appendChild(emptyOption);
 
